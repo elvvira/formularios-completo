@@ -15,16 +15,163 @@
   </head>
 
   <body>
-    <header class="header">
-      <nav>
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="#" class="menu__link">Item de ejemplo</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main"></main>
+    <main class="main">
+      <article class="column-1">
+        <form class="form"> 
+          <div class="form__field">
+            <label for="name">Text</label>
+            <input class="form__input"  type="text" id="text" name="text">
+          </div>
+          <div class="form__field">
+            <label for="number">Number</label>
+            <input class="form__input"  type="number" id="number" name="number">
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input class="form__input"  type="text" id="email" name="email">
+          </div>
+          <div class="form__field">
+            <label for="required">Required</label>
+            <input class="form__input"  type="text" id="required" name="required">
+          </div>
+          <div class="form__field">
+            <label for="disabled">Disabled</label>
+            <input class="form__input"  type="text" id="disabled" name="disabled" disabled>
+          </div>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+      </article>
+      
+      <article class="column-2">
+        <div class="form__field">
+          <legend>Select simple</legend>
+          <select name="select-simple" id="">
+            <option value="option one">Option one</option>
+            <option value="option two">Option two</option>
+          </select>
+        </div>
+        <div class="form__field">
+          <legend>Select multiple</legend>
+          <select name="select-simple" id="" multiple>
+            <option value="option one">Option one</option>
+            <option value="option two">Option two</option>
+            <option value="option two">Option three</option>
+            <option value="option two">Option four</option>
+            <option value="option two">Option five</option>
+          </select>
+        </div>
+
+        <legend class="legend">Radio Group Label</legend>
+        <div class="form__field form__field--radio">
+          <label for="one">Option one</label>
+          <input class="radio" id="one" type="radio" name="day" >
+        </div>
+        <div class="form__field form__field--radio">
+          <label for="two">Option two</label>
+          <input class="radio" id="two" type="radio" name="day" >
+        </div>
+        <div class="form__field form__field--radio">
+          <label for="three">Option three</label>
+          <input class="radio" id="three" type="radio" name="day" >
+        </div>
+        <div class="form__field form__field--radio">
+          <label for="four">Option four</label>
+          <input class="radio" id="four" type="radio" name="day" >
+        </div>
+      </article>
+
+      <article class="column-3">
+        <legend class="legend">Radio Group Custom</legend>
+        <div class="radio-group">
+          
+          <div >
+            <input class="form__input form__input--days" type="radio" name="day" id="monday">
+            <label  class="form__label form__label--day"  for="monday">Monday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="radio" name="day" id="tuesday">
+            <label  class="form__label form__label--day"  for="tuesday">Tuesday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="radio" name="day" id="wednesday">
+            <label  class="form__label form__label--day"  for="wednesday">Wednesday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="radio" name="day" id="tuersday>">
+            <label  class="form__label form__label--day"  for="tuersday>">Tuersday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="radio" name="day" id="friday">
+            <label  class="form__label form__label--day"  for="friday">Friday</label>
+          </div>
+        </div>
+
+        <div>
+          <legend class="legend">Checkbox Group Label</legend>
+          <div class="checkbox-group-label">
+            <div>
+              <label for="checkbox-group-one">Option One</label>
+              <input type="checkbox" name="checkbox-group" id="checkbox-group-one">
+            </div>
+            <div>
+              <label for="checkbox-group-two">Option Two</label>
+              <input type="checkbox" name="checkbox-group" id="checkbox-group-two">
+            </div>
+            <div>
+              <label for="checkbox-group-three">Option Three</label>
+              <input type="checkbox" name="checkbox-group" id="checkbox-group-three">
+            </div>
+            <div>
+              <label for="checkbox-group-four">Option Four</label>
+              <input type="checkbox" name="checkbox-group" id="checkbox-group-four">
+            </div>
+          </div>
+        </div>
+
+        <legend class="legend">Checkbox Group Custom</legend>
+        <div class="radio-group">
+          
+          <div >
+            <input class="form__input form__input--days" type="checkbox" name="day" id="checkbox-group-monday">
+            <label  class="form__label form__label--day"  for="checkbox-group-monday">Monday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="checkbox" name="day" id="checkbox-group-tuesday">
+            <label  class="form__label form__label--day"  for="checkbox-group-tuesday">Tuesday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="checkbox" name="day" id="checkbox-group-wednesday">
+            <label  class="form__label form__label--day"  for="checkbox-group-wednesday">Wednesday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="checkbox" name="day" id="checkbox-group-tuersday>">
+            <label  class="form__label form__label--day"  for="checkbox-group-tuersday>">Tuersday</label>
+          </div>
+          <div>
+            <input class="form__input form__input--days" type="checkbox" name="day" id="checkbox-group-friday">
+            <label  class="form__label form__label--day"  for="checkbox-group-friday">Friday</label>
+          </div>
+        </div>
+
+        <div >
+          <legend class="legend">Toggle Label</legend>
+          <div class="toggle">
+            <input class="toggle__input" type="checkbox" name="toggle" id="toggle">
+            <label  class="toggle__label"  for="toggle"></label>
+
+          </div>
+
+        </div>
+  
+
+
+
+
+      </article>
+
+    </main>
+
+
     <footer class="footer"></footer>
   </body>
 </html>

@@ -1,2 +1,10 @@
 /* ESTILOS DEL MAIN */
 @use '../mixins/responsive.scss' as *;
+
+.main{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 170px;
+    background-color: rgb(253, 251, 235);
+}

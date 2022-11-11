@@ -360,4 +360,88 @@ a {
   color: inherit;
 }
 
-/* ESTILOS DEL FOOTER */
+/* ESTILOS DEL FOOTER */ /* ESTILOS DEL MAIN */
+.main {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap: 170px;
+  background-color: rgb(253, 251, 235);
+}
+
+.legend {
+  margin-bottom: 20px;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form__field--radio {
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: 90px 15px;
+}
+.form__label--day {
+  padding: 20px;
+}
+.form__input--days {
+  display: none;
+}
+
+.radio {
+  accent-color: greenyellow;
+}
+
+.radio-group {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form__input--days:checked + .form__label--day {
+  background-color: greenyellow;
+}
+
+.checkbox-group-label {
+  width: 700px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.toggle {
+  position: relative;
+}
+.toggle__input {
+  display: none;
+}
+.toggle__label {
+  display: block;
+  width: 60px;
+  height: 35px;
+  border-radius: 36px;
+  background-color: #333;
+  transition: background-color 0.5s;
+}
+.toggle__label::before {
+  content: "";
+  position: absolute;
+  height: 34px;
+  width: 35px;
+  border-radius: 36px;
+  background-color: white;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.toggle__input:checked + .toggle__label {
+  border: 1px solid gray;
+  background-color: greenyellow;
+}
+
+.toggle__input:checked + .toggle__label::before {
+  transform: translateX(24px);
+}
